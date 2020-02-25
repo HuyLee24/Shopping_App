@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 
-export default class ItemList extends React.Components {
+class ItemList extends Component {
     state = {
-        items: [],
+        items: []
     };
 
     componentDidMuont() {
-        axios.get(``).then(res => { 
-            this.setState({ items: res.data }); 
+        axios.get(`https://my-json-server.typicode.com/HuyLee24/Shopping_App/items`).then(res => { 
+            console.log(res);
+            const items = res.data;
+            this.setState({ items }); 
         });
     }
+
+    render() {
+        return (
+            <ul>
+                { this.state.items.map(item => <li key={item.id}>{item.title}</li>) }
+            </ul>    
+        )
+    }
 }
+
+export default ItemList
