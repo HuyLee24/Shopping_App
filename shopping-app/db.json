@@ -1,0 +1,59 @@
+{
+    "items": [
+        {
+            "id": 0,
+            "title": "Iphone X",
+            "description": "new",
+            "categogy": "phone",
+            "location": "Oulu",
+            "price": "800",
+            "date of posting": "25-2-2020",
+            "delivery": "pick-up",
+            "seller name": "John",
+            "contact info": "0432156789" 
+        },
+        {
+            "id": 1,
+            "title": "Iphone 8",
+            "description": "new",
+            "categogy": "phone",
+            "location": "Vaasa",
+            "price": "600",
+            "date of posting": "25-2-2020",
+            "delivery": "pick-up",
+            "seller name": "Joe",
+            "contact info": "043212345" 
+        },
+        {
+            "id": 2,
+            "title": "Iphone 7",
+            "description": "like-new",
+            "categogy": "phone",
+            "location": "Helsinki",
+            "price": "450",
+            "date of posting": "25-2-2020",
+            "delivery": "shipping",
+            "seller name": "Walt",
+            "contact info": "0123456789" 
+        },
+        {
+            "id": 3,
+            "title": "Iphone 11",
+            "description": "used",
+            "categogy": "phone",
+            "location": "Lapland",
+            "price": "1100",
+            "date of posting": "25-2-2020",
+            "delivery": "shipping",
+            "seller name": "Ben",
+            "contact info": "0912345678" 
+        }
+    ],
+    "users": [
+        {
+            "id": 0,
+            "username": "John",
+            "password": "John123" 
+        }
+    ]
+}
