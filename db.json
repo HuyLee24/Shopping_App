@@ -52,6 +52,7 @@
     "users": [
         {
             "id": 0,
+            "fullname": "John Wick",
             "username": "John",
             "password": "John123" 
         }
