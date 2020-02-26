@@ -1,0 +1,67 @@
+[
+    {
+        "id": 0,
+        "title": "Iphone X",
+        "description": "new",
+        "categogy": "phone",
+        "location": "Oulu",
+        "images": "IphoneX.jpg",
+        "price": "800",
+        "date_of_posting": "25-2-2020",
+        "delivery": "pick-up",
+        "seller_name": "John",
+        "contact_info": "0432156789" 
+    },
+    {
+        "id": 1,
+        "title": "Iphone 8",
+        "description": "new",
+        "categogy": "phone",
+        "location": "Vaasa",
+        "images": "Iphone8.jpg",
+        "price": "600",
+        "date_of_posting": "25-2-2020",
+        "delivery": "pick-up",
+        "seller_name": "Joe",
+        "contact_info": "043212345" 
+    },
+    {
+        "id": 2,
+        "title": "Iphone 7",
+        "description": "like-new",
+        "categogy": "phone",
+        "location": "Helsinki",
+        "images": "Iphone7.jpg",
+        "price": "450",
+        "date_of_posting": "25-2-2020",
+        "delivery": "shipping",
+        "seller_name": "Walt",
+        "contact_info": "0123456789" 
+    },
+    {
+        "id": 3,
+        "title": "Iphone 11",
+        "description": "used",
+        "categogy": "phone",
+        "location": "Lapland",
+        "images": "Iphone11.jpg",
+        "price": "1100",
+        "date_of_posting": "25-2-2020",
+        "delivery": "shipping",
+        "seller_name": "Ben",
+        "contact_info": "0912345678" 
+    },
+    {
+        "id": 4,
+        "title": "Lamborghini",
+        "description": "used",
+        "categogy": "car",
+        "location": "Tampere",
+        "images": "Lamborghini.jpg",
+        "price": "1000000",
+        "date_of_posting": "26-2-2020",
+        "delivery": "shipping",
+        "seller_name": "Huy",
+        "contact_info": "0974852008" 
+    }
+]
