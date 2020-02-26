@@ -9,8 +9,7 @@ class ItemList extends Component {
     componentDidMuont() {
         axios.get(`https://my-json-server.typicode.com/HuyLee24/Shopping_App/items`).then(res => { 
             console.log(res);
-            const items = res.data;
-            this.setState({ items }); 
+            this.setState({ items: res.data}); 
         });
     }
 
