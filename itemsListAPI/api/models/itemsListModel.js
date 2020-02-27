@@ -2,22 +2,38 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-
 var ItemSchema = new Schema({
-    name: {
+    title: {
         type: String,
         required: 'Kindly enter the name of the item'
   },
+    description: {
+        type: String
+  },
+    category: {
+        type: String
+    },
+    location: {
+        type: String
+    },
+    images: {
+        type: String
+    },
+    price: {
+        type: Number
+    },
     Created_date: {
         type: Date,
         default: Date.now
-  },
-    status: {
-        type: [{
-            type: String,
-            enum: ['pending', 'ongoing', 'completed']
-    }],
-        default: ['pending']
+    },
+    delivery: {
+        type: String
+    },
+    seller_name: {
+        type: String
+    },
+    contact_info: {
+        type: String
     }
 });
 
