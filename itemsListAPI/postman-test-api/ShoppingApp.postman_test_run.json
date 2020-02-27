@@ -1,0 +1,280 @@
+{
+	"id": "ec51e91f-b2fb-4f29-a051-4d9182d85d81",
+	"name": "ShoppingApp",
+	"timestamp": "2020-02-27T14:54:44.552Z",
+	"collection_id": "b7b682c0-085d-474c-941b-3e627828f8da",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 15,
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "4ba0253a-fa7a-4933-8975-8302d51be0b3",
+			"name": "showUsers",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6,
+				3,
+				3
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "942256a3-ea8e-4c84-9c78-39ed2be4dbdb",
+			"name": "showItems",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check if item with id5e569b7d5e9cad40d83e5aa1 is Iphone 8": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Check if item with id5e569b7d5e9cad40d83e5aa1 is Iphone 8": {
+					"pass": 0,
+					"fail": 3
+				}
+			},
+			"times": [
+				4,
+				4,
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check if item with id5e569b7d5e9cad40d83e5aa1 is Iphone 8": false
+				},
+				{
+					"Status code is 200": true,
+					"Check if item with id5e569b7d5e9cad40d83e5aa1 is Iphone 8": false
+				},
+				{
+					"Status code is 200": true,
+					"Check if item with id5e569b7d5e9cad40d83e5aa1 is Iphone 8": false
+				}
+			]
+		},
+		{
+			"id": "ff98fba7-cee7-470e-bee4-1ba342e7399c",
+			"name": "showItemById",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3,
+				4,
+				3
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "d64341e7-6cf1-493a-9128-e6e3ef325de2",
+			"name": "updateItem",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3,
+				3,
+				3
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "a241d0e5-4bab-4767-9d4b-dbc80e4d5c4e",
+			"name": "addNewItems",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5,
+				3,
+				4
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "31e97cb5-0e89-408b-9085-49c04f05cc31",
+			"name": "deleteItem",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3,
+				3,
+				3
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "4b813995-2fc5-4804-bc2f-26966f87fe2f",
+			"name": "{{url}}/items",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check if item with id5e569b7d5e9cad40d83e5aa1 is Iphone 8": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Check if item with id5e569b7d5e9cad40d83e5aa1 is Iphone 8": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				4,
+				4,
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check if item with id5e569b7d5e9cad40d83e5aa1 is Iphone 8": true
+				},
+				{
+					"Status code is 200": true,
+					"Check if item with id5e569b7d5e9cad40d83e5aa1 is Iphone 8": true
+				},
+				{
+					"Status code is 200": true,
+					"Check if item with id5e569b7d5e9cad40d83e5aa1 is Iphone 8": true
+				}
+			]
+		},
+		{
+			"id": "99249937-a31e-4ac1-9a06-f67d67018031",
+			"name": "{{url}}/items",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check if item with price850 is Iphone X": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Check if item with price850 is Iphone X": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				5,
+				4,
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check if item with price850 is Iphone X": true
+				},
+				{
+					"Status code is 200": true,
+					"Check if item with price850 is Iphone X": true
+				},
+				{
+					"Status code is 200": true,
+					"Check if item with price850 is Iphone X": true
+				}
+			]
+		}
+	],
+	"count": 3,
+	"collection": {
+		"requests": [
+			{
+				"id": "4ba0253a-fa7a-4933-8975-8302d51be0b3",
+				"method": "GET"
+			},
+			{
+				"id": "942256a3-ea8e-4c84-9c78-39ed2be4dbdb",
+				"method": "GET"
+			},
+			{
+				"id": "ff98fba7-cee7-470e-bee4-1ba342e7399c",
+				"method": "GET"
+			},
+			{
+				"id": "d64341e7-6cf1-493a-9128-e6e3ef325de2",
+				"method": "PUT"
+			},
+			{
+				"id": "a241d0e5-4bab-4767-9d4b-dbc80e4d5c4e",
+				"method": "POST"
+			},
+			{
+				"id": "31e97cb5-0e89-408b-9085-49c04f05cc31",
+				"method": "DELETE"
+			},
+			{
+				"id": "4b813995-2fc5-4804-bc2f-26966f87fe2f",
+				"method": "GET"
+			},
+			{
+				"id": "99249937-a31e-4ac1-9a06-f67d67018031",
+				"method": "GET"
+			}
+		]
+	}
+}

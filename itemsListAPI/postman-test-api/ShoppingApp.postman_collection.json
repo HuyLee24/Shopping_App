@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "b7b682c0-085d-474c-941b-3e627828f8da",
+		"name": "ShoppingApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "showUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showItems",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d4257349-cbe8-4a7a-92f2-e8abc01ad3bf",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Check if item with id5e569b7d5e9cad40d83e5aa1 is Iphone 8\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData[0].title.value).to.eql(\"Iphone 8\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{url}}/items",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "showItems",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:3000/items",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"items"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1494"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5d6-hKJyx5EhI1dj8ObdKsu4nEPlAkk\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 27 Feb 2020 12:48:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"5e5699a260b4903ef4c878c2\",\n        \"title\": \"Iphone X\",\n        \"description\": \"new\",\n        \"category\": \"phone\",\n        \"location\": \"Oulu\",\n        \"price\": 800,\n        \"delivery\": \"pick-up\",\n        \"seller_name\": \"John\",\n        \"contact_info\": \"0432156789\",\n        \"Created_date\": \"2020-02-26T16:15:30.406Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"5e569b7d5e9cad40d83e5aa1\",\n        \"title\": \"Iphone 8\",\n        \"description\": \"new\",\n        \"category\": \"phone\",\n        \"location\": \"Vaasa\",\n        \"price\": 600,\n        \"delivery\": \"pick-up\",\n        \"seller_name\": \"Joe\",\n        \"contact_info\": \"043212345\",\n        \"Created_date\": \"2020-02-26T16:23:25.070Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"5e569bcd5e9cad40d83e5aa2\",\n        \"title\": \"Iphone 7\",\n        \"description\": \"like-new\",\n        \"category\": \"phone\",\n        \"location\": \"Helsinki\",\n        \"price\": 450,\n        \"delivery\": \"shipping\",\n        \"seller_name\": \"Walt\",\n        \"contact_info\": \"0123456789\",\n        \"Created_date\": \"2020-02-26T16:24:45.505Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"5e569c5f5e9cad40d83e5aa3\",\n        \"title\": \"Iphone 11\",\n        \"description\": \"used\",\n        \"category\": \"phone\",\n        \"location\": \"Lapland\",\n        \"price\": 1100,\n        \"delivery\": \"shipping\",\n        \"seller_name\": \"Ben\",\n        \"contact_info\": \"0912345678\",\n        \"Created_date\": \"2020-02-26T16:27:11.265Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"5e569c8d5e9cad40d83e5aa4\",\n        \"title\": \"Lamborghini\",\n        \"description\": \"used\",\n        \"category\": \"car\",\n        \"location\": \"Tampere\",\n        \"price\": 1000000,\n        \"delivery\": \"shipping\",\n        \"seller_name\": \"Huy\",\n        \"contact_info\": \"0974852008\",\n        \"Created_date\": \"2020-02-26T16:27:57.215Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"5e57b0f9e5cf5204c893151e\",\n        \"title\": \"ferrari 488\",\n        \"description\": \"new\",\n        \"category\": \"car\",\n        \"location\": \"Helsinki\",\n        \"price\": 1400000,\n        \"delivery\": \"shipping\",\n        \"seller_name\": \"Mark\",\n        \"contact_info\": \"Mark Garden\",\n        \"Created_date\": \"2020-02-27T12:07:21.531Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "showItemById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/items/5e569b7d5e9cad40d83e5aa1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items",
+						"5e569b7d5e9cad40d83e5aa1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateItem",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "price",
+							"value": "850",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/items/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addNewItems",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "ferrari 488",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "new",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "car",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Helsinki",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1400000",
+							"type": "text"
+						},
+						{
+							"key": "delivery",
+							"value": "shipping",
+							"type": "text"
+						},
+						{
+							"key": "seller_name",
+							"value": "Mark",
+							"type": "text"
+						},
+						{
+							"key": "contact_info",
+							"value": "Mark Garden",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteItem",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/items/5e57b0f9e5cf5204c893151e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items",
+						"5e57b0f9e5cf5204c893151e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/items",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "488f97ee-59a1-4a66-bee2-fb88908dc4fb",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Check if item with id5e569b7d5e9cad40d83e5aa1 is Iphone 8\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData[1].title).to.eql(\"Iphone 8\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/items",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/items",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "39aaaa77-546d-4939-9fdd-5715c97aa864",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Check if item with price850 is Iphone X\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData[0].price).to.eql(850);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/items",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
