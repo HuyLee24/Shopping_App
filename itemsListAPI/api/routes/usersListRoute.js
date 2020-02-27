@@ -8,7 +8,7 @@ var usersList = require('../controllers/usersListController');
         .post(usersList.create_a_user);
         
         
-    app.route('/user/:userId')
+    app.route('/users/:userId')
         .get(usersList.read_a_user)
         .put(usersList.update_a_user)
         .delete(usersList.delete_a_user);
