@@ -203,7 +203,8 @@
           "Created_date" : {
             "type" : "string",
             "description" : "the posted date of item",
-            "format" : "date"
+            "format" : "date",
+            "exmaple": "22020-02-26T16:15:30.406Z"
           }
         }
       }
