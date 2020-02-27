@@ -1,0 +1,213 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "Simple Shopping App API",
+    "description" : "Shopping app API",
+    "contact" : {
+      "email" : "mihawk240600@gmail.com"
+    },
+    "license" : {
+      "name" : "Apache 2.0",
+      "url" : "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version" : "1.0.0-oas3"
+  },
+  "servers" : [ {
+    "url" : "https://virtserver.swaggerhub.com/HuyLee24/ShoppingApp/1.0.0",
+    "description" : "SwaggerHub API Auto Mocking"
+  } ],
+  "paths" : {
+    "/items" : {
+      "get" : {
+        "summary" : "get all items",
+        "description" : "get all items' data and show",
+        "operationId" : "searchItems",
+        "responses" : {
+          "200" : {
+            "description" : "search results matching criteria",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/ItemInfo"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "summary" : "adds a new item",
+        "description" : "Adds an item to the system",
+        "operationId" : "addInventory",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/ItemInfo"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "item created"
+          },
+          "400" : {
+            "description" : "invalid input, object invalid"
+          },
+          "409" : {
+            "description" : "an existing item already exists"
+          }
+        }
+      }
+    },
+    "/items/{id}" : {
+      "get" : {
+        "summary" : "Get an item by Id",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Unique Id for an item",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "data for the selected item",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ItemInfo"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put" : {
+        "summary" : "Change the information of an item",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Unique Id for an item",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "array",
+                "items" : {
+                  "$ref" : "#/components/schemas/ItemInfo"
+                }
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "description" : "successfully update"
+          },
+          "400" : {
+            "description" : "Unsuccessfully update"
+          }
+        }
+      },
+      "delete" : {
+        "summary" : "Delete an item by Id",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Unique Id for an item",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successfully delete"
+          },
+          "400" : {
+            "description" : "Unsuccessfully delete"
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "ItemInfo" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "number",
+            "description" : "Unique id to identify an item"
+          },
+          "title" : {
+            "type" : "string",
+            "description" : "The title for the item posting",
+            "example" : "Iphone X"
+          },
+          "description" : {
+            "type" : "string",
+            "description" : "item's description",
+            "example" : "new"
+          },
+          "catergory" : {
+            "type" : "string",
+            "description" : "Kind of the product",
+            "example" : "phone"
+          },
+          "location" : {
+            "type" : "string",
+            "description" : "The location of item selling",
+            "example" : "Oulu"
+          },
+          "price" : {
+            "type" : "integer",
+            "description" : "The cost of item",
+            "format" : "int32",
+            "example" : 800
+          },
+          "delivery" : {
+            "type" : "string",
+            "description" : "transportation type",
+            "example" : "pick-up"
+          },
+          "seller_name" : {
+            "type" : "string",
+            "description" : "name of seller",
+            "example" : "John"
+          },
+          "contact_info" : {
+            "type" : "string",
+            "description" : "contaction",
+            "example" : "0432156789"
+          },
+          "Created_date" : {
+            "type" : "string",
+            "description" : "the posted date of item",
+            "format" : "date",
+            "exmaple": "22020-02-26T16:15:30.406Z"
+          }
+        }
+      }
+    }
+  }
+}
