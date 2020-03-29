@@ -1,64 +1,159 @@
 {
     "items": [
         {
-            "id": 0,
+            "_id": "5e5699a260b4903ef4c878c2",
             "title": "Iphone X",
             "description": "new",
-            "categogy": "phone",
+            "category": "phone",
             "location": "Oulu",
-            "images": "IphoneX.jpg",
-            "price": "800",
-            "date of posting": "25-2-2020",
+            "price": 1000,
             "delivery": "pick-up",
-            "seller name": "John",
-            "contact info": "0432156789" 
+            "seller_name": "John",
+            "contact_info": "0432156789",
+            "Created_date": "2020-02-26T16:15:30.406Z",
+            "__v": 0
         },
         {
-            "id": 1,
+            "_id": "5e569b7d5e9cad40d83e5aa1",
             "title": "Iphone 8",
             "description": "new",
-            "categogy": "phone",
+            "category": "phone",
             "location": "Vaasa",
-            "images": "Iphone8.jpg",
-            "price": "600",
-            "date of posting": "25-2-2020",
+            "price": 600,
             "delivery": "pick-up",
-            "seller name": "Joe",
-            "contact info": "043212345" 
+            "seller_name": "Joe",
+            "contact_info": "043212345",
+            "Created_date": "2020-02-26T16:23:25.070Z",
+            "__v": 0
         },
         {
-            "id": 2,
+            "_id": "5e569bcd5e9cad40d83e5aa2",
             "title": "Iphone 7",
             "description": "like-new",
-            "categogy": "phone",
+            "category": "phone",
             "location": "Helsinki",
-            "images": "Iphone7.jpg",
-            "price": "450",
-            "date of posting": "25-2-2020",
+            "price": 450,
             "delivery": "shipping",
-            "seller name": "Walt",
-            "contact info": "0123456789" 
+            "seller_name": "Walt",
+            "contact_info": "0123456789",
+            "Created_date": "2020-02-26T16:24:45.505Z",
+            "__v": 0
         },
         {
-            "id": 3,
+            "_id": "5e569c5f5e9cad40d83e5aa3",
             "title": "Iphone 11",
             "description": "used",
-            "categogy": "phone",
+            "category": "phone",
             "location": "Lapland",
-            "images": "Iphone11.jpg",
-            "price": "1100",
-            "date of posting": "25-2-2020",
+            "price": 1100,
             "delivery": "shipping",
-            "seller name": "Ben",
-            "contact info": "0912345678" 
+            "seller_name": "Ben",
+            "contact_info": "0912345678",
+            "Created_date": "2020-02-26T16:27:11.265Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e569c8d5e9cad40d83e5aa4",
+            "title": "Lamborghini",
+            "description": "used",
+            "category": "car",
+            "location": "Tampere",
+            "price": 1000000,
+            "delivery": "shipping",
+            "seller_name": "Huy",
+            "contact_info": "0974852008",
+            "Created_date": "2020-02-26T16:27:57.215Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e57bc8be5cf5204c893151f",
+            "title": "ferrari 488",
+            "description": "new",
+            "category": "car",
+            "location": "Helsinki",
+            "price": 1400000,
+            "delivery": "shipping",
+            "seller_name": "Mark",
+            "contact_info": "Mark Garden",
+            "Created_date": "2020-02-27T12:56:43.420Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e57d841e5cf5204c893153b",
+            "title": "ferrari 488",
+            "description": "new",
+            "category": "car",
+            "location": "Helsinki",
+            "price": 1400000,
+            "delivery": "shipping",
+            "seller_name": "Mark",
+            "contact_info": "Mark Garden",
+            "Created_date": "2020-02-27T14:54:57.603Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e57d855e5cf5204c893153c",
+            "title": "ferrari 488",
+            "description": "new",
+            "category": "car",
+            "location": "Helsinki",
+            "price": 1400000,
+            "delivery": "shipping",
+            "seller_name": "Mark",
+            "contact_info": "Mark Garden",
+            "Created_date": "2020-02-27T14:55:17.771Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e57d869e5cf5204c893153d",
+            "title": "ferrari 488",
+            "description": "new",
+            "category": "car",
+            "location": "Helsinki",
+            "price": 1400000,
+            "delivery": "shipping",
+            "seller_name": "Mark",
+            "contact_info": "Mark Garden",
+            "Created_date": "2020-02-27T14:55:37.935Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e749832270ead2e14bfef04",
+            "title": "ferrari 488",
+            "description": "new",
+            "category": "car",
+            "location": "Helsinki",
+            "price": 20,
+            "delivery": "shipping",
+            "seller_name": "Mark",
+            "contact_info": "Mark Garden",
+            "Created_date": "2020-03-20T10:17:22.435Z",
+            "__v": 0
         }
     ],
     "users": [
         {
-            "id": 0,
+            "_id": "5e565faa694663574e2bc54c",
             "fullname": "John Wick",
-            "username": "John",
-            "password": "John123" 
+            "username": "JohnW",
+            "password": "John123",
+            "Created_date": "2020-03-29T18:27:15.524Z"
+        },
+        {
+            "_id": "5e5750d7689f512d14ef33ef",
+            "fullname": "Le Quang Huy",
+            "username": "HuyLe",
+            "password": "Huy123",
+            "Created_date": "2020-02-27T05:17:11.413Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e5754c4023f133730698e64",
+            "fullname": "Ben Ten",
+            "username": "BenT",
+            "password": "Ben10",
+            "Created_date": "2020-02-27T05:33:56.130Z",
+            "__v": 0
         }
     ]
 }
