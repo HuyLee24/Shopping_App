@@ -1,7 +1,7 @@
 {
     "items": [
         {
-            "_id": "5e5699a260b4903ef4c878c2",
+            "_id": "1",
             "title": "Iphone X",
             "description": "new",
             "category": "phone",
@@ -14,7 +14,7 @@
             "__v": 0
         },
         {
-            "_id": "5e569b7d5e9cad40d83e5aa1",
+            "_id": "2",
             "title": "Iphone 8",
             "description": "new",
             "category": "phone",
@@ -27,7 +27,7 @@
             "__v": 0
         },
         {
-            "_id": "5e569bcd5e9cad40d83e5aa2",
+            "_id": "3",
             "title": "Iphone 7",
             "description": "like-new",
             "category": "phone",
@@ -40,7 +40,7 @@
             "__v": 0
         },
         {
-            "_id": "5e569c5f5e9cad40d83e5aa3",
+            "_id": "4",
             "title": "Iphone 11",
             "description": "used",
             "category": "phone",
@@ -53,7 +53,7 @@
             "__v": 0
         },
         {
-            "_id": "5e569c8d5e9cad40d83e5aa4",
+            "_id": "5",
             "title": "Lamborghini",
             "description": "used",
             "category": "car",
@@ -66,7 +66,7 @@
             "__v": 0
         },
         {
-            "_id": "5e57bc8be5cf5204c893151f",
+            "_id": "6",
             "title": "ferrari 488",
             "description": "new",
             "category": "car",
@@ -79,7 +79,7 @@
             "__v": 0
         },
         {
-            "_id": "5e57d841e5cf5204c893153b",
+            "_id": "7",
             "title": "ferrari 488",
             "description": "new",
             "category": "car",
@@ -89,45 +89,6 @@
             "seller_name": "Mark",
             "contact_info": "Mark Garden",
             "Created_date": "2020-02-27T14:54:57.603Z",
-            "__v": 0
-        },
-        {
-            "_id": "5e57d855e5cf5204c893153c",
-            "title": "ferrari 488",
-            "description": "new",
-            "category": "car",
-            "location": "Helsinki",
-            "price": 1400000,
-            "delivery": "shipping",
-            "seller_name": "Mark",
-            "contact_info": "Mark Garden",
-            "Created_date": "2020-02-27T14:55:17.771Z",
-            "__v": 0
-        },
-        {
-            "_id": "5e57d869e5cf5204c893153d",
-            "title": "ferrari 488",
-            "description": "new",
-            "category": "car",
-            "location": "Helsinki",
-            "price": 1400000,
-            "delivery": "shipping",
-            "seller_name": "Mark",
-            "contact_info": "Mark Garden",
-            "Created_date": "2020-02-27T14:55:37.935Z",
-            "__v": 0
-        },
-        {
-            "_id": "5e749832270ead2e14bfef04",
-            "title": "ferrari 488",
-            "description": "new",
-            "category": "car",
-            "location": "Helsinki",
-            "price": 20,
-            "delivery": "shipping",
-            "seller_name": "Mark",
-            "contact_info": "Mark Garden",
-            "Created_date": "2020-03-20T10:17:22.435Z",
             "__v": 0
         }
     ],
