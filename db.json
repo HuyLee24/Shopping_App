@@ -10,7 +10,7 @@
             "delivery": "pick-up",
             "seller_name": "John",
             "contact_info": "0432156789",
-            "Created_date": "2020-02-26T16:15:30.406Z",
+            "Created_date": "2020-02-26",
             "__v": 0
         },
         {
@@ -23,7 +23,7 @@
             "delivery": "pick-up",
             "seller_name": "Joe",
             "contact_info": "043212345",
-            "Created_date": "2020-02-26T16:23:25.070Z",
+            "Created_date": "2020-02-26",
             "__v": 0
         },
         {
@@ -36,7 +36,7 @@
             "delivery": "shipping",
             "seller_name": "Walt",
             "contact_info": "0123456789",
-            "Created_date": "2020-02-26T16:24:45.505Z",
+            "Created_date": "2020-02-26",
             "__v": 0
         },
         {
@@ -49,7 +49,7 @@
             "delivery": "shipping",
             "seller_name": "Ben",
             "contact_info": "0912345678",
-            "Created_date": "2020-02-26T16:27:11.265Z",
+            "Created_date": "2020-02-26",
             "__v": 0
         },
         {
@@ -62,7 +62,7 @@
             "delivery": "shipping",
             "seller_name": "Huy",
             "contact_info": "0974852008",
-            "Created_date": "2020-02-26T16:27:57.215Z",
+            "Created_date": "2020-02-26",
             "__v": 0
         },
         {
@@ -75,7 +75,7 @@
             "delivery": "shipping",
             "seller_name": "Mark",
             "contact_info": "Mark Garden",
-            "Created_date": "2020-02-27T12:56:43.420Z",
+            "Created_date": "2020-02-27",
             "__v": 0
         },
         {
@@ -88,7 +88,20 @@
             "delivery": "shipping",
             "seller_name": "Mark",
             "contact_info": "Mark Garden",
-            "Created_date": "2020-02-27T14:54:57.603Z",
+            "Created_date": "2020-02-27",
+            "__v": 0
+        },
+        {
+            "_id": "8",
+            "title": "bugatti veron",
+            "description": "new",
+            "category": "car",
+            "location": "Helsinki",
+            "price": 2000000,
+            "delivery": "shipping",
+            "seller_name": "Lucy",
+            "contact_info": "Lucy Garden",
+            "Created_date": "2020-02-28",
             "__v": 0
         }
     ],
@@ -98,14 +111,14 @@
             "fullname": "John Wick",
             "username": "JohnW",
             "password": "John123",
-            "Created_date": "2020-03-29T18:27:15.524Z"
+            "Created_date": "2020-03-29"
         },
         {
             "_id": "5e5750d7689f512d14ef33ef",
             "fullname": "Le Quang Huy",
             "username": "HuyLe",
             "password": "Huy123",
-            "Created_date": "2020-02-27T05:17:11.413Z",
+            "Created_date": "2020-02-27",
             "__v": 0
         },
         {
@@ -113,7 +126,7 @@
             "fullname": "Ben Ten",
             "username": "BenT",
             "password": "Ben10",
-            "Created_date": "2020-02-27T05:33:56.130Z",
+            "Created_date": "2020-02-27",
             "__v": 0
         }
     ]
